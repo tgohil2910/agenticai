@@ -9,7 +9,7 @@ from langgraph.prebuilt import ToolNode
 from langgraph.checkpoint.memory import MemorySaver # <--- NEW IMPORT
 
 # --- CONFIGURATION ---
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 MODEL_ID = "google/gemini-2.0-flash-exp:free"
 
